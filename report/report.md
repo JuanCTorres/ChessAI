@@ -24,7 +24,7 @@ information about each piece on the board as well as whose turn it is.
 
 For minimax search, I implemented it following the pseudo-code as described in Russell and Norvig, p. 166:
 
-```
+```python
 def minimax_decision(self, board: chess.Board, depth: int) -> chess.Move:
     possible_move_list = []
     for action in self.get_possible_moves(board):
@@ -117,7 +117,7 @@ Therefore, I add or subtract the material value of the king to the heuristic dep
 I implemented iterative-deepening using minimax. In order to re-use minimax without modification, I store the utility
 value of move minimax returns in a field of `MinimaxAI` just before returning the move.
 
-```
+```python
 def choose_move(self, board: chess.Board):
     move_best = None
     utility_val_best = float('-inf')
@@ -150,7 +150,7 @@ examined, it turned out not to be as good as the AI previously expected.
 
 I implemented alpha-beta pruning by following the pseudo-code noted in Russell and Norvig, p. 170:
 
-```
+```python
 def choose_move(self, board: chess.Board):
     return self.alpha_beta_search_with_transposition(board, 0)
 
