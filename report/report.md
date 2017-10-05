@@ -378,7 +378,7 @@ calls.
 I implemented a transposition table with a dictionary mapping board states to utility values. In order to hash the board,
 I use the string function of the board. This code is found in the `AIPlayer` class:
 
-```
+```python
 @staticmethod
 def get_hashable_board(board):
     return str(board)
@@ -387,7 +387,7 @@ def get_hashable_board(board):
 In particular, note the following code used in alpha-beta search, which checks whether a particular state is present in
 the transposition table before searching for its value:
 
-```
+```python
 if self.use_transposition:
     hashable_board = self.get_hashable_board(board)
     if hashable_board in self.transposition_table:
