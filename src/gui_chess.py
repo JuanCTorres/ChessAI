@@ -51,24 +51,9 @@ class ChessGui:
 
 
 if __name__ == "__main__":
-    # random.seed(1)
-    # WHITE = chess.COLORS[0]
-    # BLACK = chess.COLORS[1]
+    random.seed(1)
     WHITE = True
     BLACK = False
-
-    # player_ronda = RandomAI()
-
-    # to do: gui does not work well with HumanPlayer, due to input() use on stdin conflict
-    #   with event loop.
-
-    # player1 = RandomAI()
-    # player1 = MinimaxAI(3, WHITE, shuffle_moves=False)
-    # player2 = AlphaBetaAI(max_depth=3, color=BLACK, shuffle_moves=True, use_transposition=False)
-    # player2 = MinimaxAI(3, BLACK)
-    # player2 = IterativeMinimaxAI(3, BLACK)
-    # player
-    # player1 = MinimaxAI(3, WHITE, shuffle_moves=False)
     player1 = RandomAI()
     player2 = AlphaBetaAI(max_depth=4, color=BLACK, shuffle_moves=True, use_transposition=False)
 
