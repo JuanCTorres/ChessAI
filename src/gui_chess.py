@@ -8,12 +8,12 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QApplication, QWidget
 import sys
 import chess, chess.svg
-from src.RandomAI import RandomAI
-from src.MinimaxAI import MinimaxAI
-from src.ChessGame import ChessGame
-from src.IterativeMinimaxAI import IterativeMinimaxAI
-from src.HumanPlayer import HumanPlayer
-from src.AlphaBetaAI import AlphaBetaAI
+from RandomAI import RandomAI
+from MinimaxAI import MinimaxAI
+from ChessGame import ChessGame
+from IterativeMinimaxAI import IterativeMinimaxAI
+from HumanPlayer import HumanPlayer
+from AlphaBetaAI import AlphaBetaAI
 
 import random
 

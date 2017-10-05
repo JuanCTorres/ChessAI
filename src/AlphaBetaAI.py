@@ -6,7 +6,7 @@ from time import sleep
 
 import chess
 from math import inf
-from src.AIPlayer import AIPlayer
+from AIPlayer import AIPlayer
 
 
 class AlphaBetaAI(AIPlayer):

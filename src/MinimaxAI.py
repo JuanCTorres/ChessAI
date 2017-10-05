@@ -2,7 +2,7 @@
 Author: Juan C. Torres
 October 2017
 """
-from src.AIPlayer import AIPlayer
+from AIPlayer import AIPlayer
 import chess
 
 

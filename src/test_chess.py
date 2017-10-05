@@ -2,19 +2,19 @@
 Author: Juan C. Torres, based on code by Devin Balkcom
 October 2017
 """
-from src.RandomAI import RandomAI
-from src.HumanPlayer import HumanPlayer
-from src.MinimaxAI import MinimaxAI
-from src.AlphaBetaAI import AlphaBetaAI
-from src.ChessGame import ChessGame
+from RandomAI import RandomAI
+from HumanPlayer import HumanPlayer
+from MinimaxAI import MinimaxAI
+from AlphaBetaAI import AlphaBetaAI
+from ChessGame import ChessGame
 
 WHITE = 1
 BLACK = 0
 
 if __name__ == '__main__':
     players = [
-        MinimaxAI(3, WHITE, shuffle_moves=False),
-        AlphaBetaAI(max_depth=3, color=BLACK, shuffle_moves=True, use_transposition=False)
+        RandomAI(),
+        AlphaBetaAI(max_depth=4, color=BLACK, shuffle_moves=True, use_transposition=False)
     ]
 
     game = ChessGame(*players)

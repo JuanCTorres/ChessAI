@@ -4,7 +4,7 @@ October 2017
 """
 import chess
 from time import sleep
-from src.MinimaxAI import MinimaxAI
+from MinimaxAI import MinimaxAI
 
 
 class IterativeMinimaxAI(MinimaxAI):
